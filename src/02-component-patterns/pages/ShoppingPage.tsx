@@ -1,4 +1,4 @@
-import { ProductCard, ProductImage, ProductTitle, ProductButtons } from '../components/'
+import { ProductCard, ProductImage, ProductTitle, ProductButtons } from '../components'
 
 
 const product = {
