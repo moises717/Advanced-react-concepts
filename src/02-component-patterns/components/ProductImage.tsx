@@ -13,6 +13,7 @@ export interface Props {
 
 export const ProductImage = ({ img = "", className, style }: Props) => {
     const { product } = useContext(ProductContext);
+
     let imageToShow: string;
 
     if (img) imageToShow = img;
@@ -20,6 +21,6 @@ export const ProductImage = ({ img = "", className, style }: Props) => {
     else imageToShow = noImg;
 
     return (
-        <img className={`${styles.productImg} ${className}`} src={img ?? noImg} alt="" style={style} />
+        <img className={`${styles.productImg} ${className}`} src={imageToShow} alt="" style={style} />
     )
 }
